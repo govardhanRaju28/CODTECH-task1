@@ -3,6 +3,8 @@ import numpy as np
 from sklearn import datasets
 import pandas as pd
 from sklearn import model_selection
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 
 ds=pd.read_csv('Real estate.csv')
 print(ds.shape)
@@ -16,7 +18,6 @@ x_train,x_test,y_train,y_test=model_selection.train_test_split(x,y)
 
 
 
-from sklearn.linear_model import LinearRegression
 alg=LinearRegression()
 alg.fit(x_train,y_train)
 print(x_train.shape)
@@ -27,15 +28,21 @@ ypredicted=alg.predict(x_test)
 print(y_test.shape)
 print(x_test.shape)
 
+#analyzing model performance by usnig r-squared error
+print('model score on testing data:',alg.score(x_test,y_test))
 
-alg.score(x_test,y_test)
+print('model score on testing data:',alg.score(x_train,y_train))
 
-alg.score(x_train,y_train)
+#analysing model performace by using mean squared error
+mean_suared_error=((y_test-ypredicted)**2).sum()
+mean_suared_error=mean_suared_error/(y_test.size)
+print('mean squared error:',mean_suared_error)
 
-import matplotlib.pyplot as plt
-plt.scatter(ypredicted,y_test)
-plt.axis([10,20,0,60])
-#plt.plot(x_test,ypredicted)
+
+
+
+
+
 
 
 
