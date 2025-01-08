@@ -7,6 +7,9 @@ DURATION:30 NOV TO JAN 15 2025
 **OVERVIEW OF PROJECT**:
 project name:
 linear regression on housing prices
+
+![image](https://github.com/user-attachments/assets/13c07bfc-8c0e-496f-9aca-35874fc51c89)
+
 objective:
 This project implements Linear Regression to predict a target variable based on multiple input features from a dataset. The focus is on training a regression model, evaluating its performance using metrics, and analyzing the results.
 
