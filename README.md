@@ -14,7 +14,7 @@ This project implements Linear Regression to predict a target variable based on 
 
 This project implements **Linear Regression** to predict a target variable based on multiple input features from a dataset. The focus is on training a regression model, evaluating its performance using metrics, and analyzing the results.  
 
----
+
 
 ### **Key Points**  
 
@@ -36,7 +36,7 @@ This project implements **Linear Regression** to predict a target variable based
 4. **Visualization:**  
    - Visual plots can be added to compare the actual and predicted values for better interpretation of results.  
 
----
+
 
 ### **Technologies Used**  
 
@@ -49,6 +49,4 @@ This project implements **Linear Regression** to predict a target variable based
    - **Metrics:** Evaluates the model using R-squared and MSE.  
 5. **Matplotlib:** Used to visualize results.  
 
----
 
-This project highlights the end-to-end process of building and validating a regression model to solve a real-world problem.
